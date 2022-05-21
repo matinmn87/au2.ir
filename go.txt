@@ -1,0 +1,17 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Matin mohammadi
+	email = matinmn87@gmail.com
+	signingkey = ed25519
+[init]
+	defaultBranch = master
+[core]
+	editor = \"C:\\Users\\Matin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
